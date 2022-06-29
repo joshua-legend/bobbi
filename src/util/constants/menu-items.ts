@@ -71,7 +71,6 @@ export type MenuItem = {
 };
 
 function makeMenuLevel(options: MenuOption[], depth = 0): MenuItem[] {
-    console.log(options.map((option)=>({...option})), 'op')
     return options.map((option, idx) => ({
         ...option,
         id: depth === 0 ? idx.toString() : `${depth}.${idx}`,

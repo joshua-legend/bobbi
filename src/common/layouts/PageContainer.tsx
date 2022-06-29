@@ -1,11 +1,6 @@
 import styled from "styled-components";
 
-interface PageContainer {
-    primary?:boolean
-    light?:boolean
-}
-
-export const PageContainer = styled.div<PageContainer>`
+export const PageContainer = styled.div`
   padding: 20px;
   width: 80vw;
 `;

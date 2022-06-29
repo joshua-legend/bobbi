@@ -10,7 +10,7 @@ type MenuItemProps = {
     menuItem: MenuItemType,
 };
 
-export default function MenuItem({menuItem: { name, icon: Icon, url, depth, subItems },}: MenuItemProps) {
+export default function MenuItem({menuItem: { name, icon: Icon, url, depth, subItems }}: MenuItemProps) {
     const [isExpanded, toggleExpanded] = useState(false);
     const router = useRouter();
     const selected = router.asPath === url;

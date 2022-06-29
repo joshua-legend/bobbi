@@ -4,7 +4,7 @@ export const colors = {
   pinky:`#f8bbd0`,
   green: `#388e3c`,
   teal:`#b2dfdb`,
-  brown: `#725b53`,
+  brown: `#e7967f`,
   white: `#ffffff`,
   black: '#1e1f1d',
   yellow: '#edb83c',
@@ -36,3 +36,13 @@ export const sizes = {
   sizeXXXL: `4rem`,
 }
 
+export const device = {
+  xs: `320px`,
+  sm: `480px`,
+  md: `600px`,
+  lg: `768px`,
+  xl: `900px`,
+  xxl: `1024px`,
+  xxxl: `1400px`,
+  fluid: `100%`,
+}

@@ -13,11 +13,8 @@ type HeaderProps = {
 
 export const Header = ({isOpened,toggleDrawer}:HeaderProps) => {
 
-    const { setLight,isLight } = useTheme();
-    const switchMode = () =>{
-        setLight(!isLight)
-    }
-
+    const { setLight,lightMode } = useTheme();
+    const switchMode = () =>{setLight(!lightMode)}
 
     return (
         <HeaderContainer>
@@ -26,7 +23,7 @@ export const Header = ({isOpened,toggleDrawer}:HeaderProps) => {
             </IconContainer>
             <TitleContainer>Header</TitleContainer>
             <DarkModeContainer onClick={switchMode}>
-                {isLight ? <LightMode/> :<ModeNight />}
+                {lightMode ? <LightMode/> :<ModeNight />}
             </DarkModeContainer>
         </HeaderContainer>
     );
