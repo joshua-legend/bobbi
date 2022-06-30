@@ -1,5 +1,9 @@
-import {FooterContainer} from "../../layouts/FooterContainer";
+import {Footers} from "../../elements/layout/Footers";
 
 export default function Footer() {
-    return <FooterContainer>Footer</FooterContainer>;
+    return (
+        <Footers>
+
+        </Footers>
+    );
 }

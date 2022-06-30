@@ -8,14 +8,13 @@ import styled from "styled-components";
 
 
 interface Box {
-    hasSVG?:boolean
-    svgHeight?:number
+    cursorable?:boolean
 }
 
 export const Box = styled.div<Box>`
-    height: 100%;
+    cursor: ${props=>props.cursorable ? `pointer` : undefined};
     & svg {
-      height: 100%;
+      height: ${props => props.theme.svg.height}px;
     }
 `;
 

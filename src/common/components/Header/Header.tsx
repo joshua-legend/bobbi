@@ -1,11 +1,8 @@
-import {Navbar} from "../../layouts/Navbar";
-import {TitleContainer} from "../../layouts/TitleContainer";
+import {Navbar} from "../../elements/layout/Navbar";
 import {ChevronLeft, LightMode, Menu, ModeNight} from "@styled-icons/material";
-import {IconContainer} from "../../layouts/IconContainer";
-import {DarkModeContainer} from "../../layouts/DarkModeContainer";
 import {useTheme} from "../../../core/store/useTheme";
-import {NavbarContainer} from "../../layouts/NavbarContainer";
-import {Box} from "../../elements/Box";
+import {Box} from "../../elements/element/Box";
+import {NavbarContainer} from "./part/NavbarContainer";
 
 type HeaderProps = {
     isOpened: boolean,
@@ -16,24 +13,18 @@ type HeaderProps = {
 export const Header = ({isOpened,toggleDrawer}:HeaderProps) => {
 
     const { setLight,lightMode } = useTheme();
-    const switchMode = () =>{setLight(!lightMode)}
+    const switchMode = () => setLight(!lightMode);
 
     return (
-        <Navbar height={75}>
+        <Navbar height={64}>
             <NavbarContainer size={"xl"}>
-                <Box onClick={toggleDrawer}>
+                <Box cursorable onClick={toggleDrawer}>
                     {isOpened ? <ChevronLeft /> : <Menu />}
                 </Box>
-                <Box>
-                    123123
-                </Box>
-                <IconContainer onClick={toggleDrawer}>
-                    {isOpened ? <ChevronLeft /> : <Menu />}
-                </IconContainer>
-                <TitleContainer>Header</TitleContainer>
-                <DarkModeContainer onClick={switchMode}>
+                <Box>Header</Box>
+                <Box cursorable onClick={switchMode}>
                     {lightMode ? <LightMode/> :<ModeNight />}
-                </DarkModeContainer>
+                </Box>
             </NavbarContainer>
         </Navbar>
     );

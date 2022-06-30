@@ -1,42 +1,65 @@
-export const colors = {
-  light:`#eae3e3`,
-  dark: `#1c313a`,
-  pinky:`#f8bbd0`,
-  green: `#388e3c`,
-  teal:`#b2dfdb`,
-  brown: `#e7967f`,
-  white: `#ffffff`,
-  black: '#1e1f1d',
-  yellow: '#edb83c',
-  orange: '#eb7952',
-  gray: '#6e6e6e',
-  gray_background: '#f5f5f5',
+export const COLORS = {
+  GRAY: {
+    HEADLINE: `#212529`,
+    SUBHEAD: `#28323C`,
+    BODY: `#343A40`,
+    TEXT: `#343A40`,
+    TEXT_SECONDARY: `#495057`,
+    LINK: `#495057`,
+    DIVIDER: `#495057`,
+    FOOTNOTE: `#646F7C`,
+    CAPTION: `#646F7C`,
+    CONTENT: `#FAF9F8`,
+    BACKGROUND: `#EFEFF4`,
+  },
+  MAIN:{
+    PRIMARY:`#7F56D9`,
+    SECONDARY:`#9E77ED`,
+    TERTIARY:`#B692F6`,
+    QUATERNARY:`#D6BBFB`,
+    QUINARY:`#E9D7FE`,
+  },
+  INFORMATION:{
+    PRIMARY:`#1570EF`,
+    SECONDARY:`#2E90FA`,
+    TERTIARY:`#53B1FD`,
+    QUATERNARY:`#84CAFF`,
+    QUINARY:`#B2DDFF`,
+  },
+  SUCCESS:{
+    PRIMARY:`#039855`,
+    SECONDARY:`#12B76A`,
+    TERTIARY:`#32D583`,
+    QUATERNARY:`#6CE9A6`,
+    QUINARY:`#A6F4C5`,
+  },
+  WARNING:{
+    PRIMARY:`#DC6803`,
+    SECONDARY:`#F79009`,
+    TERTIARY:`#FDB022`,
+    QUATERNARY:`#FEC84B`,
+    QUINARY:`#FEDF89`,
+  },
+  ERROR:{
+    PRIMARY:`#D92D20`,
+    SECONDARY:`#F04438`,
+    TERTIARY:`#F97066`,
+    QUATERNARY:`#FDA29B`,
+    QUINARY:`#FECDCA`,
+  },
 }
 
-export const fontSize = {
-  micro:`14px`,
-  tiny: `16px`,
-  petite: `16px`,
-  small:`16px`,
-  little:`16px`,
-  big:`16px`,
-  large:`16px`,
-  huge:`16px`,
-  giant:`16px`,
-  humongous:`16px`,
-}
-export const sizes = {
-  sizeXXS: `0.25rem`,
-  sizeXS: `0.5rem`,
-  sizeS: `0.75rem`,
-  sizeM: `1rem`,
-  sizeL: `1.25rem`,
-  sizeXL: `1.5rem`,
-  sizeXXL: `2rem`,
-  sizeXXXL: `4rem`,
-}
+const sizes = {
+  MOBILE_S: '320px',
+  MOBILE_M: '375px',
+  MOBILE_L: '425px',
+  TABLET: '768px',
+  LAPTOP: '1024px',
+  LAPTOP_L: '1440px',
+  DESKTOP: '2560px',
+};
 
-export const device = {
+export const WIDTH = {
   xs: `320px`,
   sm: `480px`,
   md: `600px`,
@@ -46,3 +69,30 @@ export const device = {
   xxxl: `1400px`,
   fluid: `100%`,
 }
+
+
+export const DEVICE = {
+  MOBILE_S: `(max-width: ${sizes.MOBILE_S})`,
+  MOBILE_M: `(max-width: ${sizes.MOBILE_M})`,
+  MOBILE_L: `(max-width: ${sizes.MOBILE_L})`,
+  TABLET: `(max-width: ${sizes.TABLET})`,
+  LAPTOP: `(max-width: ${sizes.LAPTOP})`,
+  LAPTOP_L: `(max-width: ${sizes.LAPTOP_L})`,
+  DESKTOP: `(max-width: ${sizes.DESKTOP})`,
+}
+
+export const PADDING = {
+  sm: `3rem`,
+  md: `6rem`,
+  lg: `12rem`,
+}
+
+export const SVG ={
+  normal: 30
+}
+
+export const BOX = {
+  BORDER_RADIUS:`0.3rem`
+}
+
+

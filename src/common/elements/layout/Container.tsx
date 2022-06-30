@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import {device} from "../styles/global/global-variable";
+import {WIDTH} from "../../styles/global/global-variable";
 
 /*
 * Container
@@ -13,7 +13,8 @@ interface Container {
 
 export const Container = styled.div<Container>`
     width: 100%;
-    max-width: ${props=> props.size ? device[props.size] : undefined};
+    max-width: ${props=> props.size ? WIDTH[props.size] : undefined};
     margin-right: auto;
     margin-left: auto;
 `;
+

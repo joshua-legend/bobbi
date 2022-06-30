@@ -10,6 +10,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   const { lightMode } = useTheme();
 
+
   return (
       <ThemeProvider theme={lightMode ? theme : DarkTheme}>
         <GlobalStyle />

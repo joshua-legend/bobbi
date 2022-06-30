@@ -12,7 +12,7 @@ export const GlobalStyle = createGlobalStyle`
   *::after {
     box-sizing: inherit;
   }
-  //* { font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';}
+  * { font-family: tway_air;}
   a { cursor: pointer; text-decoration: none; }
 `;
 

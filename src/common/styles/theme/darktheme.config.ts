@@ -1,24 +1,58 @@
 import {DefaultTheme} from "styled-components";
-import {colors, device} from "../global/global-variable";
+import {BOX, COLORS, DEVICE, SVG} from "../global/global-variable";
 
 export const DarkTheme: DefaultTheme = {
-    breakPoint: {
-        xs: device.xs,
-        sm: device.sm,
-        md: device.md,
-        lg: device.lg,
-        xl: device.xl,
-        xxl: device.xxl
+    BREAKPOINT: {
+        MOBILE_S: DEVICE.MOBILE_S,
+        MOBILE_M: DEVICE.MOBILE_M,
+        MOBILE_L: DEVICE.MOBILE_L,
+        TABLET: DEVICE.TABLET,
+        LAPTOP: DEVICE.LAPTOP,
+        LAPTOP_L: DEVICE.LAPTOP_L,
+        DESKTOP: DEVICE.DESKTOP
     },
-    colors: {
-        main: colors.dark,
-        primary: colors.green,
-        color:colors.gray,
-        background: colors.teal,
-        black: colors.black,
-        yellow: colors.yellow,
-        orange: colors.orange,
-        gray: colors.gray,
-        gray_background: colors.gray_background,
+    TYPOGRAPHY:{
+        FONT_SIZE:{
+            MOBILE: {
+                H1:`28px`,
+                H2:`24px`,
+                H3:`20px`,
+                H4:`16px`,
+                H5:`14px`,
+                H6:`14px`,
+            },
+            TABLETS: {
+                H1:`32px`,
+                H2:`24px`,
+                H3:`20px`,
+                H4:`16px`,
+                H5:`14px`,
+                H6:`12px`,
+            },
+            DESKTOP: {
+                H1:`54px`,
+                H2:`46px`,
+                H3:`38px`,
+                H4:`24px`,
+                H5:`22px`,
+                H6:`18px`,
+            },
+        },
+        FONT_FAMILY:{},
+        FONT_WEIGHT:{},
+        COLOR:{
+            MAIN: COLORS.MAIN,
+            GRAY: COLORS.GRAY,
+            INFORMATION: COLORS.INFORMATION,
+            SUCCESS: COLORS.SUCCESS,
+            WARNING: COLORS.WARNING,
+            ERROR: COLORS.ERROR,
+        }
     },
+    svg:{
+        height:SVG.normal
+    },
+    BOX_MODEL: {
+        BORDER_RADIUS: BOX.BORDER_RADIUS,
+    }
 };

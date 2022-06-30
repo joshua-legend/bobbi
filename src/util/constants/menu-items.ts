@@ -14,50 +14,36 @@ const MENU_OPTIONS: MenuOption[] = [
         url: "/",
     },
     {
-        name: "Orders",
+        name: "콘텐츠 관리",
         icon: ShoppingCart,
-        url: "/orders",
+        url: "/content",
         subItems: [
             {
-                name: "New",
+                name: "제작 콘텐츠",
                 icon: AddShoppingCart,
-                url: "/new-orders",
+                url: "/produce",
             },
             {
-                name: "Completed",
+                name: "참여 콘텐츠",
                 icon: Done,
-                url: "/completed-orders",
+                url: "/participate",
+            },
+            {
+                name: "댓글",
+                icon: Done,
+                url: "/comment",
             },
         ],
     },
     {
-        name: "Customers",
+        name: "회원 관리",
         icon: People,
-        url: "/customers",
-        subItems: [
-            {
-                name: "Corporate",
-                icon: Business,
-                url: "/corporate",
-            },
-            {
-                name: "SMB",
-                icon: HomeWork,
-                url: "/smb",
-                subItems: [
-                    {
-                        name: "Retail",
-                        icon: Person,
-                        url: "/retail",
-                    },
-                ],
-            },
-        ],
+        url: "/member",
     },
     {
-        name: "Inventory",
+        name: "관리자 관리",
         icon: AttachMoney,
-        url: "/inventory",
+        url: "/admin",
     },
 ];
 
