@@ -7,7 +7,7 @@ type MenuOption = {
     subItems?: MenuOption[],
 };
 
-const MENU_OPTIONS: MenuOption[] = [
+export const MENU_OPTIONS: MenuOption[] = [
     {
         name: "Dashboard",
         icon: Dashboard,
@@ -21,17 +21,22 @@ const MENU_OPTIONS: MenuOption[] = [
             {
                 name: "제작 콘텐츠",
                 icon: AddShoppingCart,
-                url: "/produce",
+                url: "/content/produce",
             },
             {
                 name: "참여 콘텐츠",
                 icon: Done,
-                url: "/participate",
+                url: "/content/participate",
             },
             {
                 name: "댓글",
                 icon: Done,
-                url: "/comment",
+                url: "/content/comment",
+            },
+            {
+                name: "test",
+                icon: Done,
+                url: "/orders",
             },
         ],
     },
@@ -46,6 +51,10 @@ const MENU_OPTIONS: MenuOption[] = [
         url: "/admin",
     },
 ];
+
+
+
+
 
 export type MenuItem = {
     name: string,
