@@ -1,5 +1,10 @@
 export const BREADCRUMB_MENU = [
     {
+        root: "관리자 홈",
+        child: undefined,
+        url: "/",
+    },
+    {
         root: "콘텐츠 관리",
         child: "제작 콘텐츠",
         url: "/content/produce",
