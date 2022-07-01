@@ -1,11 +1,7 @@
 import styled from "styled-components";
 
-interface Layout {
-    primary?:boolean
-    light?:boolean
-}
 
-export const RootLayout = styled.div<Layout>`
+export const RootLayout = styled.div`
   text-align: center;
   display: flex;
   flex-direction: column;

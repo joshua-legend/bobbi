@@ -1,9 +1,10 @@
-import {SidebarAside} from "./part/SidebarAside";
 import MakeMenuList from "./part/menu/MakeMenuList";
+import {SidebarAside} from "./part/SidebarAside";
 import {MENU_ITEMS} from "../../../util/constants/menu-items";
-import {Container} from "../../elements/layout/Container";
 import {LogoContainer} from "./part/logo/LogoContainer";
-import {Box} from "../../elements/element/Box";
+import {LogoBox} from "./part/logo/LogoBox";
+import {MenuContainer} from "./part/menu/MenuContainer";
+
 
 type SidebarProps = {
     isOpened: boolean;
@@ -13,9 +14,11 @@ export default function Sidebar({ isOpened }: SidebarProps) {
     return (
         <SidebarAside isOpened={isOpened}>
             <LogoContainer size={"fluid"}>
-                <Box>BOBBI Admin</Box>
+                <LogoBox>BOBBI Admin</LogoBox>
             </LogoContainer>
-            <MakeMenuList options={MENU_ITEMS} />
+            <MenuContainer size={"fluid"}>
+                <MakeMenuList options={MENU_ITEMS} />
+            </MenuContainer>
         </SidebarAside>
     );
 }

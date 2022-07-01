@@ -12,7 +12,6 @@ export const GlobalStyle = createGlobalStyle`
   *::after {
     box-sizing: inherit;
   }
-  * { font-family: tway_air;}
   a { cursor: pointer; text-decoration: none; }
 `;
 

@@ -22,7 +22,7 @@ export default function MenuItem({menuItem: { name, icon: Icon, url, depth, subI
 
     return (
         <>
-            <MenuBox className={selected ? "selected" : ""} depth={depth}>
+            <MenuBox size={"H4"} className={selected ? "selected" : ""} depth={depth}>
                 <a>
                     <Link href={url} passHref>
                         <div className="menu-item">

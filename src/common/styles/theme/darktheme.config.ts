@@ -2,15 +2,6 @@ import {DefaultTheme} from "styled-components";
 import {BOX, COLORS, DEVICE, SVG} from "../global/global-variable";
 
 export const DarkTheme: DefaultTheme = {
-    BREAKPOINT: {
-        MOBILE_S: DEVICE.MOBILE_S,
-        MOBILE_M: DEVICE.MOBILE_M,
-        MOBILE_L: DEVICE.MOBILE_L,
-        TABLET: DEVICE.TABLET,
-        LAPTOP: DEVICE.LAPTOP,
-        LAPTOP_L: DEVICE.LAPTOP_L,
-        DESKTOP: DEVICE.DESKTOP
-    },
     TYPOGRAPHY:{
         FONT_SIZE:{
             MOBILE: {
@@ -29,6 +20,14 @@ export const DarkTheme: DefaultTheme = {
                 H5:`14px`,
                 H6:`12px`,
             },
+            LAPTOP: {
+                H1:`40px`,
+                H2:`34px`,
+                H3:`28px`,
+                H4:`22px`,
+                H5:`18px`,
+                H6:`14px`,
+            },
             DESKTOP: {
                 H1:`54px`,
                 H2:`46px`,
@@ -40,6 +39,7 @@ export const DarkTheme: DefaultTheme = {
         },
         FONT_FAMILY:{},
         FONT_WEIGHT:{},
+        LINE_HEIGHT:{},
         COLOR:{
             MAIN: COLORS.MAIN,
             GRAY: COLORS.GRAY,
@@ -49,10 +49,23 @@ export const DarkTheme: DefaultTheme = {
             ERROR: COLORS.ERROR,
         }
     },
-    svg:{
-        height:SVG.normal
+    BACKGROUND:{
+        BACKGROUND_COLOR:{
+            MAIN: COLORS.MAIN,
+            GRAY: COLORS.GRAY,
+            INFORMATION: COLORS.INFORMATION,
+            SUCCESS: COLORS.SUCCESS,
+            WARNING: COLORS.WARNING,
+            ERROR: COLORS.ERROR,
+        },
+        CURSOR:{},
     },
     BOX_MODEL: {
         BORDER_RADIUS: BOX.BORDER_RADIUS,
-    }
+    },
+    SVG:{
+        HEIGHT_LARGE:SVG.LARGE,
+        HEIGHT_MEDIUM:SVG.MEDIUM,
+        HEIGHT_SMALL:SVG.SMALL,
+    },
 };

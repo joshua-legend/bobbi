@@ -26,7 +26,7 @@ export default function Main({ children }: DashboardLayoutProps) {
             {/*<Header isOpened={isOpened} toggleDrawer={toggleDrawer} />*/}
             <Content>
                 <Sidebar isOpened={true} />
-                <Layout isOpened={true}>{children}</Layout>
+                <Layout isOpened={true} >{children}</Layout>
             </Content>
             <Footer />
         </RootLayout>

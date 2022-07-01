@@ -1,6 +1,7 @@
 export const COLORS = {
   GRAY: {
     HEADLINE: `#212529`,
+    HOVER: `#212529`,
     SUBHEAD: `#28323C`,
     BODY: `#343A40`,
     TEXT: `#343A40`,
@@ -49,7 +50,7 @@ export const COLORS = {
   },
 }
 
-const sizes = {
+export const SIZES = {
   MOBILE_S: '320px',
   MOBILE_M: '375px',
   MOBILE_L: '425px',
@@ -72,13 +73,13 @@ export const WIDTH = {
 
 
 export const DEVICE = {
-  MOBILE_S: `(max-width: ${sizes.MOBILE_S})`,
-  MOBILE_M: `(max-width: ${sizes.MOBILE_M})`,
-  MOBILE_L: `(max-width: ${sizes.MOBILE_L})`,
-  TABLET: `(max-width: ${sizes.TABLET})`,
-  LAPTOP: `(max-width: ${sizes.LAPTOP})`,
-  LAPTOP_L: `(max-width: ${sizes.LAPTOP_L})`,
-  DESKTOP: `(max-width: ${sizes.DESKTOP})`,
+  MOBILE_S: `(max-width: ${SIZES.MOBILE_S})`,
+  MOBILE_M: `(max-width: ${SIZES.MOBILE_M})`,
+  MOBILE_L: `(max-width: ${SIZES.MOBILE_L})`,
+  TABLET: `(max-width: ${SIZES.TABLET})`,
+  LAPTOP: `(max-width: ${SIZES.LAPTOP})`,
+  LAPTOP_L: `(max-width: ${SIZES.LAPTOP_L})`,
+  DESKTOP: `(max-width: ${SIZES.DESKTOP})`,
 }
 
 export const PADDING = {
@@ -88,7 +89,9 @@ export const PADDING = {
 }
 
 export const SVG ={
-  normal: 30
+  LARGE:`40px`,
+  MEDIUM:`25px`,
+  SMALL:`18px`,
 }
 
 export const BOX = {

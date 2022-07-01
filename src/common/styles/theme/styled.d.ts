@@ -1,14 +1,13 @@
 import 'styled-components';
 
-type depth = {
+type Degree = {
     PRIMARY: string,
     SECONDARY:string,
     TERTIARY:string,
     QUATERNARY:string,
     QUINARY:string,
 };
-
-type text = {
+type Gray = {
     HEADLINE: string,
     SUBHEAD: string,
     BODY: string,
@@ -20,19 +19,11 @@ type text = {
     CAPTION: string,
     CONTENT: string,
     BACKGROUND: string,
+    HOVER: string,
 };
 
 declare module 'styled-components' {
     export interface DefaultTheme {
-        BREAKPOINT: {
-            MOBILE_S:string,
-            MOBILE_M:string,
-            MOBILE_L:string,
-            TABLET:string,
-            LAPTOP:string,
-            LAPTOP_L:string,
-            DESKTOP:string,
-        };
         TYPOGRAPHY:{
             FONT_SIZE:{
                 MOBILE: {
@@ -51,6 +42,14 @@ declare module 'styled-components' {
                     H5:string,
                     H6:string,
                 },
+                LAPTOP:{
+                    H1:string,
+                    H2:string,
+                    H3:string,
+                    H4:string,
+                    H5:string,
+                    H6:string,
+                }
                 DESKTOP: {
                     H1:string,
                     H2:string,
@@ -62,20 +61,34 @@ declare module 'styled-components' {
             },
             FONT_FAMILY:{},
             FONT_WEIGHT:{},
+            LINE_HEIGHT:{},
             COLOR:{
-                MAIN:text;
-                GRAY:depth;
-                INFORMATION:depth;
-                SUCCESS:depth;
-                WARNING:depth;
-                ERROR:depth;
+                MAIN:Degree;
+                GRAY:Gray;
+                INFORMATION:Degree;
+                SUCCESS:Degree;
+                WARNING:Degree;
+                ERROR:Degree;
             }
+        },
+        BACKGROUND:{
+            BACKGROUND_COLOR:{
+                MAIN:Degree;
+                GRAY:Gray;
+                INFORMATION:Degree;
+                SUCCESS:Degree;
+                WARNING:Degree;
+                ERROR:Degree;
+            },
+            CURSOR:{},
         }
         BOX_MODEL: {
             BORDER_RADIUS: string,
         }
-        svg: {
-            height: number;
+        SVG: {
+            HEIGHT_LARGE:string,
+            HEIGHT_MEDIUM:string,
+            HEIGHT_SMALL:string,
         }
     }
 }

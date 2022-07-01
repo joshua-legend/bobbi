@@ -1,6 +1,12 @@
 import styled from "styled-components";
+import {ReactElement, ReactNode} from "react";
 
-export const Layout = styled.div<{ isOpened: boolean }>`
-  width: ${(props) => (props.isOpened ? "80vw" : "100vw")};
+interface ILayout {
+    children: ReactNode | ReactElement;
+    isOpened: boolean;
+}
+
+export const Layout = styled.div<ILayout>`
+  width: ${(props) => (props.isOpened ? "86vw" : "100vw")};
 `;
 

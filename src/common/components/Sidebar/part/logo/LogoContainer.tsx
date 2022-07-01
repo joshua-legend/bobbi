@@ -7,5 +7,6 @@ export const LogoContainer = styled(Container)`
   justify-content: center;
   align-items: center;
   height: 80px;
+  margin: 3rem 0;
 `;
 

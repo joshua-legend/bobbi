@@ -1,4 +1,4 @@
-import {Dashboard, ShoppingCart, People, AttachMoney, AddShoppingCart, Done, Business, HomeWork, Person,} from "@styled-icons/material";
+import {Dashboard, ShoppingCart, People, AttachMoney, AddShoppingCart, Done,} from "@styled-icons/material";
 
 type MenuOption = {
     name: string,
