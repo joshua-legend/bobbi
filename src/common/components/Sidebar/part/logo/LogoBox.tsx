@@ -6,7 +6,7 @@ export const LogoBox = styled(Box)`
     display: flex;
     align-items: center;
 
-    font-family: 'Inter', sans-serif;
+    font-family: 'Work Sans', sans-serif;
     font-size: 35px;
     font-weight: 700;
     line-height: 35px;

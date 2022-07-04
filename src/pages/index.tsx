@@ -6,7 +6,7 @@ const Home: NextPage = () => {
 
     return (
         <>
-            <HomeIndex ></HomeIndex>
+            <HomeIndex />
         </>
 
     );

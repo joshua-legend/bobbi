@@ -1,6 +1,6 @@
 import {Footers} from "../../elements/layout/Footers";
 
-export default function Footer() {
+export default function FooterComp() {
     return (
         <Footers>
 

@@ -10,7 +10,7 @@ type SidebarProps = {
     isOpened: boolean;
 };
 
-export default function Sidebar({ isOpened }: SidebarProps) {
+export default function SidebarComp({ isOpened }: SidebarProps) {
     return (
         <SidebarAside isOpened={isOpened}>
             <LogoContainer size={"fluid"}>

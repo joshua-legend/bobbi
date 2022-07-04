@@ -33,11 +33,6 @@ export const MENU_OPTIONS: MenuOption[] = [
                 icon: Done,
                 url: "/content/comment",
             },
-            {
-                name: "test",
-                icon: Done,
-                url: "/orders",
-            },
         ],
     },
     {

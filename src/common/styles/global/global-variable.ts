@@ -95,7 +95,8 @@ export const SVG ={
 }
 
 export const BOX = {
-  BORDER_RADIUS:`0.3rem`
+  BORDER_RADIUS:`0.3rem`,
+  BORDER_HOVER: `1px solid ${COLORS.SUCCESS.PRIMARY}`
 }
 
 

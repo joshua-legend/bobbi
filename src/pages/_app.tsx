@@ -5,11 +5,11 @@ import {theme} from "../common/styles/theme/theme.config";
 import Main from "../common/modules/Main";
 import {useTheme} from "../core/store/useTheme";
 import {DarkTheme} from "../common/styles/theme/darktheme.config";
+import {useRouter} from "next/router";
 
 function MyApp({ Component, pageProps }: AppProps) {
 
   const { lightMode } = useTheme();
-
 
   return (
       <ThemeProvider theme={lightMode ? theme : DarkTheme}>

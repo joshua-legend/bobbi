@@ -7,8 +7,15 @@ interface Button {
 }
 
 export const Button = styled.button<Button>`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border:none;
+  width: 100%;
   padding: 1rem;
-  border-radius: ${props => props.theme.BOX_MODEL.BORDER_RADIUS};
-  color: ${props => props.theme.TYPOGRAPHY.COLOR.MAIN.PRIMARY};
-  outline: ${props => props.outline ? "black" : "none"};
+  
+  &:hover{
+    border: ${props => props.theme.BOX_MODEL.BORDER_HOVER};
+  }
 `;

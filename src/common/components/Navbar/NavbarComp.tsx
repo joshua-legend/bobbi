@@ -4,24 +4,26 @@ import {BreadCrumbContainer} from "./part/BreadCrumbContainer";
 import {BreadCrumbBox} from "./part/BreadCrumbBox";
 import {ProfileBox} from "./part/ProfileBox";
 import {useRouter} from "next/router";
-import {BREADCRUMB_MENU as bread} from "../../../util/constants/breadcrumb";
+import {BREADCRUMB_MENU as BREAD} from "../../../util/constants/breadcrumb";
 
-export const Navbar = () => {
+
+export const NavbarComp = () => {
 
     const router = useRouter();
-    const {root,child} = bread.filter(value => value.url === router.pathname)[0];
-
+    console.log(router)
+    const {parent, child} = BREAD.find(obj =>obj.url === router.pathname);
 
     return (
         <HeaderSection padding={"md"} >
             <BreadCrumbContainer size={"fluid"}>
                 <BreadCrumbBox>
-                    <span>{root}</span>
+                    <span>{parent}</span>
                     {
-                        child ? <>
+                        child ?
+                        <>
                             <ChevronRight />
                             <span>{child}</span>
-                        </>  : undefined
+                        </> : undefined
                     }
                 </BreadCrumbBox>
                 <ProfileBox>

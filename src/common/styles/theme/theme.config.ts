@@ -62,6 +62,7 @@ export const theme: DefaultTheme = {
     },
     BOX_MODEL: {
         BORDER_RADIUS: BOX.BORDER_RADIUS,
+        BORDER_HOVER: BOX.BORDER_HOVER
     },
     SVG:{
         HEIGHT_LARGE:SVG.LARGE,

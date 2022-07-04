@@ -84,6 +84,7 @@ declare module 'styled-components' {
         }
         BOX_MODEL: {
             BORDER_RADIUS: string,
+            BORDER_HOVER: string,
         }
         SVG: {
             HEIGHT_LARGE:string,

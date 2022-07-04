@@ -1,32 +1,32 @@
 export const BREADCRUMB_MENU = [
     {
-        root: "관리자 홈",
-        child: undefined,
+        parent: "관리자 홈",
+        child: "",
         url: "/",
     },
     {
-        root: "콘텐츠 관리",
+        parent: "콘텐츠 관리",
         child: "제작 콘텐츠",
         url: "/content/produce",
     },
     {
-        root: "콘텐츠 관리",
+        parent: "콘텐츠 관리",
         child: "참여 콘텐츠",
         url: "/content/participate",
     },
     {
-        root: "콘텐츠 관리",
+        parent: "콘텐츠 관리",
         child: "댓글",
         url: "/content/comment",
     },
     {
-        root: "회원 관리",
-        child: undefined,
+        parent: "회원 관리",
+        child: "",
         url: "/member",
     },
     {
-        root: "관리자 관리",
-        child: undefined,
+        parent: "관리자 관리",
+        child: "",
         url: "/admin",
     },
 ]
