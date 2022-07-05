@@ -1,7 +1,8 @@
 import type { NextPage } from 'next'
+import ParticipateComp from "../../common/components/Content/Participate/ParticipateComp";
 
 const Participate: NextPage = () => {
-    return <div>Participate</div>;
+    return <ParticipateComp />;
 };
 
 export default Participate;

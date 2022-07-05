@@ -8,9 +8,14 @@ import {SelectButton} from "./part/select/SelectButton";
 import {useEffect, useState} from "react";
 import {TableContainer} from "./part/table/TableContainer";
 import {Table} from "./part/table/Table";
-import axios from "axios";
 import {NextPage} from "next";
 import useSWR from 'swr'
+import {ButtonSection} from "./part/button/ButtonSection";
+import {Box, Container, Pagination} from "@mui/material";
+import {ButtonContainer} from "./part/button/ButtonContainer";
+import Button from "@mui/material/Button";
+import {PaginationContainer} from "./part/pagination/PaginationContainer";
+import {PaginationSection} from "./part/pagination/PaginationSection";
 
 // interface Props {
 //     ProduceGetData: IProduce[];
@@ -59,6 +64,24 @@ const ProduceComp:NextPage = () => {
                     <Table head={headObj} body={data}/>
                 </TableContainer>
             </TableSection>
+            <ButtonSection>
+                <ButtonContainer style={{display:"flex"}} maxWidth="lg">
+                    <Box>
+                        <Button variant={"contained"} size={"medium"}>사용</Button>
+                    </Box>
+                    <Box>
+                        <Button variant={"contained"} size={"medium"}>사용안함</Button>
+                    </Box>
+                    <Box>
+                        <Button variant={"contained"} size={"medium"}>삭제</Button>
+                    </Box>
+                </ButtonContainer>
+            </ButtonSection>
+            <PaginationContainer>
+                <PaginationSection>
+                    <Pagination boundaryCount={1} count={100} showFirstButton showLastButton color="primary" />
+                </PaginationSection>
+            </PaginationContainer>
         </>
     );
 }
