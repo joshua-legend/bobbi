@@ -2,7 +2,6 @@ import styled from "styled-components";
 import {Section} from "../../../../../elements/layout/Section";
 
 export const TableSection = styled(Section)`
-    height: 62px;
   thead
   {
     background-color: #3f87a6;
@@ -12,7 +11,7 @@ export const TableSection = styled(Section)`
   tbody {
     background-color: #e4f0f5;
   }
-  
+
   table {
     border-collapse: collapse;
     border: 2px solid rgb(200, 200, 200);
@@ -30,4 +29,5 @@ export const TableSection = styled(Section)`
   td {
     text-align: center;
   }
+
 `;

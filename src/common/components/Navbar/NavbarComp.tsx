@@ -10,21 +10,20 @@ import {BREADCRUMB_MENU as BREAD} from "../../../util/constants/breadcrumb";
 export const NavbarComp = () => {
 
     const router = useRouter();
-    console.log(router)
-    const {parent, child} = BREAD.find(obj =>obj.url === router.pathname);
+    // const {parent, child} = BREAD.find(obj =>obj.url === router.pathname);
 
     return (
         <HeaderSection padding={"md"} >
             <BreadCrumbContainer size={"fluid"}>
                 <BreadCrumbBox>
-                    <span>{parent}</span>
-                    {
-                        child ?
-                        <>
-                            <ChevronRight />
-                            <span>{child}</span>
-                        </> : undefined
-                    }
+                    {/*<span>{parent}</span>*/}
+                    {/*{*/}
+                    {/*    child ?*/}
+                    {/*    <>*/}
+                    {/*        <ChevronRight />*/}
+                    {/*        <span>{child}</span>*/}
+                    {/*    </> : undefined*/}
+                    {/*}*/}
                 </BreadCrumbBox>
                 <ProfileBox>
                     <span>김바비(admin1)</span>
