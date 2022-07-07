@@ -12,7 +12,7 @@ type SidebarProps = {
 
 export default function SidebarComp({ isOpened }: SidebarProps) {
     return (
-        <SidebarAside isOpened={isOpened}>
+        <SidebarAside>
             <LogoContainer size={"fluid"}>
                 <LogoBox>BOBBI Admin</LogoBox>
             </LogoContainer>

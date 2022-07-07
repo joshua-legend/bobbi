@@ -1,8 +1,8 @@
 import styled from "styled-components";
-import {Container} from "../../../../elements/layout/Container";
+import {ContainerCustom} from "../../../../elements/layout/ContainerCustom";
 
 
-export const LogoContainer = styled(Container)`
+export const LogoContainer = styled(ContainerCustom)`
   display: flex;
   justify-content: center;
   align-items: center;

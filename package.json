@@ -14,6 +14,7 @@
     "@fortawesome/fontawesome-svg-core": "^6.1.1",
     "@fortawesome/free-regular-svg-icons": "^6.1.1",
     "@mui/material": "^5.8.7",
+    "@mui/x-data-grid": "^5.12.3",
     "@styled-icons/material": "^10.34.0",
     "axios": "^0.27.2",
     "boxicons": "^2.1.2",

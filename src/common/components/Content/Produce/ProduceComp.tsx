@@ -16,6 +16,10 @@ import {ButtonContainer} from "./part/button/ButtonContainer";
 import Button from "@mui/material/Button";
 import {PaginationContainer} from "./part/pagination/PaginationContainer";
 import {PaginationSection} from "./part/pagination/PaginationSection";
+import BasicModal from "./part/table/BasicModal";
+import TestDialog from "./part/table/TestDialog";
+import FormDialog from "./part/table/FormDialog";
+import ProfileDialog from "./part/table/ProfileDialog";
 
 // interface Props {
 //     ProduceGetData: IProduce[];
@@ -44,14 +48,17 @@ const ProduceComp:NextPage = () => {
     const headObj = ProduceItem.map(obj=>obj.item)
 
     const [search, setSearch] = useState<SearchObj | null>(null);
-    const [posts, setPosts] = useState([]);
+    const [form,setForm] = useState(false);
+    const [profile,setProfile] = useState(false);
 
+    const [modal, setModal] = useState(false);
     const fetcher = (url) => fetch(url).then((r) => r.json());
     const {data} = useSWR('http://localhost:3000/api/getProduce',fetcher);
     if (!data) return <h1>Loading...</h1>;
 
     return (
         <>
+
             <SelectSection>
                 <SelectContainer size={"fluid"}>
                     <Dropdown items={dropdownObj} />
@@ -60,20 +67,20 @@ const ProduceComp:NextPage = () => {
                 </SelectContainer>
             </SelectSection>
             <TableSection>
-                <TableContainer size={"fluid"}>
+                <TableContainer>
                     <Table head={headObj} body={data}/>
                 </TableContainer>
             </TableSection>
             <ButtonSection>
                 <ButtonContainer style={{display:"flex"}} maxWidth="lg">
                     <Box>
-                        <Button variant={"contained"} size={"medium"}>사용</Button>
+                        <Button onClick={()=>setForm(true)} variant={"contained"} size={"medium"}>사용</Button>
                     </Box>
                     <Box>
-                        <Button variant={"contained"} size={"medium"}>사용안함</Button>
+                        <Button onClick={()=>setProfile(true)} variant={"contained"} size={"medium"}>사용안함</Button>
                     </Box>
                     <Box>
-                        <Button variant={"contained"} size={"medium"}>삭제</Button>
+                        <Button onClick={()=>setModal(true)} variant={"contained"} size={"medium"}>삭제</Button>
                     </Box>
                 </ButtonContainer>
             </ButtonSection>
@@ -82,6 +89,9 @@ const ProduceComp:NextPage = () => {
                     <Pagination boundaryCount={1} count={100} showFirstButton showLastButton color="primary" />
                 </PaginationSection>
             </PaginationContainer>
+            {form && <FormDialog isOpen={form} setIsOpen={setForm} />}
+            {profile && <ProfileDialog isOpen={profile} setIsOpen={setProfile} />}
+            {modal && <TestDialog content={"콘텐츠"} isOpen={modal} setIsOpen={setModal}/>}
         </>
     );
 }

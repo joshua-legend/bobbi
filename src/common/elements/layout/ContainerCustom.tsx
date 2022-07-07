@@ -11,7 +11,7 @@ interface Container {
     size:size
 }
 
-export const Container = styled.div<Container>`
+export const ContainerCustom = styled.div<Container>`
     width: 100%;
     max-width: ${props=> props.size ? WIDTH[props.size] : undefined};
     margin-right: auto;

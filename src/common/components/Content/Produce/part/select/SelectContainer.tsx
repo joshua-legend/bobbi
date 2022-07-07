@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import {Container} from "../../../../../elements/layout/Container";
+import {ContainerCustom} from "../../../../../elements/layout/ContainerCustom";
 
-export const SelectContainer = styled(Container)`
+export const SelectContainer = styled(ContainerCustom)`
     display: flex;
     max-width: 90%;
   

@@ -1,9 +1,9 @@
 import styled from "styled-components";
-import {Container} from "../../../../elements/layout/Container";
+import {ContainerCustom} from "../../../../elements/layout/ContainerCustom";
 
 
 
-export const MenuContainer = styled(Container)`
-    padding: 10px 30px;
+export const MenuContainer = styled(ContainerCustom)`
+  padding: 10px 30px 10px 0px;
 `;
 

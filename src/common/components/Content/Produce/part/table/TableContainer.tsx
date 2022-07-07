@@ -1,6 +1,7 @@
 import styled from "styled-components";
-import {Container} from "../../../../../elements/layout/Container";
+import {Container} from "@mui/material";
 
 export const TableContainer = styled(Container)`
-  max-width: 90%;
+    height: 400px;
+    width: 90%;
 `
